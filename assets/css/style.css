@@ -28,6 +28,7 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+
 * {
      box-sizing: border-box !important;
 }
@@ -110,7 +111,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -155,7 +156,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -301,7 +302,7 @@ ul.btn li:last-child {
 
 
 /*-- header area --*/
-.logo{
+.logo {
      max-height: 50px;
 }
 
@@ -312,6 +313,18 @@ ul.btn li:last-child {
 
 
 /*-- navigation--*/
+
+.ir-arriba {
+     display: none;
+     background-repeat: no-repeat;
+     font-size: 20px;
+     color: black;
+     cursor: pointer;
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     z-index: 2;
+}
 
 .navigation.navbar {
      float: right;
@@ -698,7 +711,7 @@ ul.btn li:last-child {
      font-size: 30px;
      text-transform: uppercase;
      font-weight: 600;
-     
+
      text-shadow: 0 0 3px #ffff, 0 0 5px #fff;
 
 }
@@ -1035,4 +1048,3 @@ ul.link li a::after {
 .products_page .product .titlepage {
      margin-top: 70px;
 }
-
