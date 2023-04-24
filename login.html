@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>SPP - Login</title>
+    {% include "partials/resources.html" %}
+    <script defer src="js/bloqueaTeclas.js"></script>
+    <link rel="icon" href="img/logo_betech.png'">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-box" id="login">
+        <img src="img/logo_betech.png" class="avatar" alt="Avatar Image">
+        <h1>Ingresar</h1>
+            <form method="post">
+                <div class='rut-input'> 
+                    <div class='input-login rut-body' placeholder='RUT Cliente'></div>
+                    <span>-</span>
+                    <div class='input-login rut-dv'></div>
+                </div>
+                <div> {{form.password}} </div>
+                {% if error_message %}
+                    <div class="error-message">{{ error_message }}</div>
+                {% endif %}
+                <input type="submit" value="Ingresar">
+                {% include "partials/footer.html" %}
+            </form>
+    </div>
+</body>
+</html>
